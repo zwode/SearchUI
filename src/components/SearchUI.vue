@@ -39,6 +39,7 @@ h1 {
   text-align: center;
   max-width: 550px;
   width: 100%;
+  margin-bottom: 15px;
 }
 
 input {

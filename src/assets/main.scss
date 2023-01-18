@@ -12,9 +12,14 @@ input {
   border-radius: 15px;
   border: 2px solid #132F4C;
   margin-bottom: 20px;
+  transition: 0.2s;
 }
 
 input:active {
+  border: 2px solid #007FFF;
+}
+
+input:focus-visible {
   border: 2px solid #007FFF;
 }
 
