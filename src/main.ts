@@ -1,5 +1,9 @@
-import { createApp } from 'vue'
+import { createSSRApp } from 'vue'
+import './assets/main.scss'
+import { createPinia } from 'pinia'
 import App from './App.vue'
 import router from './router'
 
-createApp(App).use(router).mount('#app')
+const Pinia = createPinia()
+
+createSSRApp(App).use(router).use(Pinia).mount('#app')

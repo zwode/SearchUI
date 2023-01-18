@@ -1,0 +1,28 @@
+body {
+  background: #132F4C;
+  color: #fff;
+  margin: 0!important;
+}
+
+input {
+  color: #fff;
+  background-color: #0A1929;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 15px;
+  border: 2px solid #132F4C;
+  margin-bottom: 20px;
+}
+
+input:active {
+  border: 2px solid #007FFF;
+}
+
+input:focus {
+  border-color: #007FFF;
+}
+
+div {
+  color: #ffffff;
+  font-size: 16px;
+}

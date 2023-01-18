@@ -1,18 +1,20 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <SearchUI />
+    <div :key='link' v-for='link in searchStore.returnResult'>
+      <ResultSearch :model='link' />
+    </div>
   </div>
 </template>
 
-<script lang="ts">
-import { Options, Vue } from 'vue-class-component';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+<script lang="ts" setup>
+import SearchUI from '@/components/SearchUI.vue'
+import ResultSearch from '@/components/ResultSearch.vue'
+import { useSearchStore } from '@/stores'
 
-@Options({
-  components: {
-    HelloWorld,
-  },
-})
-export default class HomeView extends Vue {}
+const searchStore = useSearchStore()
 </script>
+
+<style lang="scss" scoped>
+
+</style>
